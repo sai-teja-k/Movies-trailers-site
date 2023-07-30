@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/netflix-logo-png-large.png" alt="Logo"
+                class="logo">
+        </div>
+        <div class="search">
+            <button class="btn">Search</button>
+            <input type="text" name="searched" id="search-bar">
+        </div>
+        <ul class="header-nav">
+            <li><a href="#" class="items-list">Home</a></li>
+            <li class="items-list item-genre">
+                <a href="#">Genre</a>
+                <ul class="dropdown genre-dropdown">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Adventure</a></li>
+                    <li><a href="#">Anime</a></li>
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Romantic</a></li>
+                    <li><a href="#">Sci-Fi</a></li>
+                    <li><a href="#">Thriller</a></li>
+                </ul>
+            </li>
+            <li class="items-list item-category">
+                <a href="#">Category</a>
+                <ul class="dropdown category-dropdown">
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Top Rated</a></li>
+                    <li><a href="#">Classics</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="profile">
+            <img src="img/Avatar.jpg" alt="Admin Profile" class="Avatar">
+        </div>
+    </header>
+    <main>
+        <div class="movies">
+            <div class="movie" onclick="showMovieDetails('harrypotter')">
+                <div class="movie-img"><img src="img/1.jpg" alt="Movie"></div>
+                <a href="#">
+                    <div>
+                            <p>Harry potter</p>
+                    </div>
+                </a>
+            </div>
+            <div class="movie" onclick="showMovieDetails('antman')">
+                <div class="movie-img"><img src="img/2.jpg" alt="Movie"></div>
+                <a href="#">
+                    <div>
+                        <p>Ant-man</p>
+                    </div>
+                </a>
+            </div>
+            <div class="movie" onclick="showMovieDetails('ironman')">
+                <div class="movie-img"><img src="img/3.jpg" alt="Movie"></div>
+                <a href="#">
+                    <div>
+                        <p>Iorn man</p>
+                    </div>
+                </a>
+            </div>
+            <div class="movie" onclick="showMovieDetails('titanic')">
+                <div class="movie-img"><img src="img/4.jpg" alt="Movie"></div>
+                <a href="#">
+                    <div>
+                        <p>Titanic</p>
+                    </div>
+                </a>
+            </div>
+            <div class="movie" onclick="showMovieDetails('captainamerica')">
+                <div class="movie-img"><img src="img/5.jpg" alt="Movie"></div>
+                <a href="#">
+                    <div>
+                        <p>Captain America</p>
+                    </div>
+                </a>
+            </div>
+            <div class="movie" onclick="showMovieDetails('Bahubali-2')">
+                <div class="movie-img"><img src="img/6.jpg" alt="Movie"></div>
+                <a href="#">
+                    <div>
+                        <p>Bahubali-2</p>
+                    </div>
+                </a>
+            </div>
+            <div class="movie" onclick="showMovieDetails('alien')">
+                <div class="movie-img"><img src="img/7.jpg" alt="Movie"></div>
+                <a href="#">
+                    <div>
+                        <p>Alien</p>
+                    </div>
+                </a>
+            </div>
+            <div class="movie" onclick="showMovieDetails('openheimer')">
+                <div class="movie-img"><img src="img/8.jpg" alt="Movie"></div>
+                <a href="#">
+                    <div>
+                        <p>Openheimer</p>
+                    </div>
+                </a>
+            </div>
+            <div class="movie" onclick="showMovieDetails('Pirates-ofthe-carribean')">
+                <div class="movie-img"><img src="img/9.jpg" alt="Movie"></div>
+                <a href="#">
+                    <div>
+                        <p>Pirates of the carribean</p>
+                    </div>
+                </a>
+            </div>
+            <div class="movie" onclick="showMovieDetails('Mission-impossible')">
+                <div class="movie-img"><img src="img/10.jpg" alt="Movie"></div>
+                <a href="#">
+                    <div>
+                        <p>Mission impossible</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <nav>
+        <li><a href="#" class="items-list">Support</a></li>
+        <li><a href="#" class="items-list">Privacy</a></li>
+        <li><a href="#" class="items-list">About</a></li>
+        <li><p class="items-footer">Copyrights</p></li>
+    </nav>
+    <div class="pagination">
+        <button class="prev-btn" onclick="prevPage()">&#8249; Prev</button>
+        <span class="page-number">Page 1</span>
+        <button class="next-btn" onclick="nextPage()">Next &#8250;</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+</body>
+
+</html>
