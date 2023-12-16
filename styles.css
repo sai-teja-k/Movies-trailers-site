@@ -261,6 +261,24 @@ nav .items-list {
     }
 }
 
+/* pagination */
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:20px;
+}
+
+.apgination .prev,.next{
+    
+}
+
+.pagination .page-number{
+    margin:0 5px;
+}
+
 /* Responsive Design */
 
 /* For mobile devices */

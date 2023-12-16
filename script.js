@@ -1,5 +1,3 @@
-// JavaScript for modal functionality
-
 // Object to store movie data
 const moviesData = {
     "harrypotter": {
